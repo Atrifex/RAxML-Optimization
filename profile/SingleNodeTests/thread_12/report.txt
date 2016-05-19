@@ -1,0 +1,783 @@
+Index  % CPU Time:Total  CPU Time:Self  CPU Time:Children  Name                                        Index
+-----  ----------------  -------------  -----------------  ------------------------------------------  -----
+                                                             <spontaneous>                                  
+[1]    91.67             0.0            1326.952           __clone                                     [1]  
+                         0.0            1326.952             start_thread                              [2]  
+                                                                                                            
+                         0.0            1326.952             __clone                                   [1]  
+[2]    91.67             0.0            1326.952           start_thread                                [2]  
+                         200.380        1126.351             likelihoodThread                          [3]  
+                         0.0            0.220                [Unknown stack frame(s)]                  [74] 
+                                                                                                            
+                         200.380        1126.351             start_thread                              [2]  
+[3]    91.65             200.380        1126.351           likelihoodThread                            [3]  
+                         9.385          1116.966             execFunction                              [4]  
+                                                                                                            
+                         0.100          103.030              masterBarrier                             [17] 
+                         0.230          0.0                  [Unknown stack frame(s)]                  [74] 
+                         9.385          1116.966             likelihoodThread                          [3]  
+[4]    84.95             9.715          1219.996           execFunction                                [4]  
+                         4.327          0.0                  __memcpy_ssse3_back                       [49] 
+                         2.998          418.554              makenewzIterative                         [7]  
+                         1.340          564.506              execCore                                  [5]  
+                         1.159          99.805               newviewIterative                          [6]  
+                         0.289          96.256               evaluateIterative                         [22] 
+                         0.070          0.0                  [Import thunk memcpy]                     [86] 
+                         0.010          0.0                  threadFixModelIndices                     [113]
+                         0.0            30.683               optRateCatPthreads                        [36] 
+                                                                                                            
+                         1.340          564.506              execFunction                              [4]  
+[5]    39.09             1.340          564.506            execCore                                    [5]  
+                         237.093        12.919               coreGTRGAMMA                              [9]  
+                         230.998        81.620               coreGTRCAT                                [8]  
+                         1.507          0.0                  _int_free                                 [53] 
+                         0.349          0.0                  free                                      [69] 
+                         0.020          0.0                  [Import thunk free]                       [107]
+                                                                                                            
+                         0.340          39.092               evaluateIterative                         [22] 
+                         1.159          99.805               execFunction                              [4]  
+                         4.243          355.665              makenewzIterative                         [7]  
+[6]    34.56             5.742          494.562            newviewIterative                            [6]  
+                         211.384        0.0                  newviewGTRCAT_AVX                         [10] 
+                         181.240        0.0                  newviewGTRGAMMA_AVX                       [12] 
+                         11.006         90.882               makeP                                     [18] 
+                         0.010          0.0                  _int_free                                 [53] 
+                         0.0            0.040                rax_malloc                                [46] 
+                                                                                                            
+                         2.998          418.554              execFunction                              [4]  
+[7]    29.12             2.998          418.554            makenewzIterative                           [7]  
+                         38.394         0.0                  sumGAMMA                                  [34] 
+                         20.182         0.0                  sumCAT                                    [37] 
+                         4.243          355.665              newviewIterative                          [6]  
+                         0.070          0.0                  isTip                                     [85] 
+                                                                                                            
+                         230.998        81.620               execCore                                  [5]  
+[8]    21.6              230.998        81.620             coreGTRCAT                                  [8]  
+                         66.703         0.0                  exp                                       [11] 
+                         8.612          0.0                  FABS                                      [42] 
+                         0.390          0.0                  [Import thunk exp]                        [55] 
+                         0.030          5.885                rax_malloc                                [46] 
+                                                                                                            
+                         237.093        12.919               execCore                                  [5]  
+[9]    17.27             237.093        12.919             coreGTRGAMMA                                [9]  
+                         7.781          0.0                  exp                                       [11] 
+                         5.048          0.0                  FABS                                      [42] 
+                         0.090          0.0                  [Import thunk exp]                        [55] 
+                                                                                                            
+                         211.384        0.0                  newviewIterative                          [6]  
+[10]   14.6              211.384        0.0                newviewGTRCAT_AVX                           [10] 
+                                                                                                            
+                         0.260          0.0                  topLevelMakenewz                          [20] 
+                         2.629          0.0                  calcDiagptable                            [50] 
+                         7.781          0.0                  coreGTRGAMMA                              [9]  
+                         23.573         0.0                  evaluatePartialGeneric                    [35] 
+                         66.703         0.0                  coreGTRCAT                                [8]  
+                         90.463         0.0                  makeP                                     [18] 
+[11]   13.22             191.409        0.0                exp                                         [11] 
+                                                                                                            
+                         181.240        0.0                  newviewIterative                          [6]  
+[12]   12.52             181.240        0.0                newviewGTRGAMMA_AVX                         [12] 
+                                                                                                            
+                         0.0            120.619              _start                                    [14] 
+[13]   8.33              0.0            120.619            __libc_start_main                           [13] 
+                         0.020          120.599              main                                      [15] 
+                                                                                                            
+                                                             <spontaneous>                                  
+[14]   8.33              0.0            120.619            _start                                      [14] 
+                         0.0            120.619              __libc_start_main                         [13] 
+                                                                                                            
+                         0.020          120.599              __libc_start_main                         [13] 
+[15]   8.33              0.020          120.599            main                                        [15] 
+                         0.010          0.050                getinput                                  [88] 
+                         0.0            0.020                checkSequences.isra.38                    [108]
+                         0.0            120.509              doInference                               [16] 
+                         0.0            0.010                masterBarrier                             [17] 
+                                                                                                            
+                         0.0            120.509              main                                      [15] 
+[16]   8.32              0.0            120.509            doInference                                 [16] 
+                         0.0            72.631               computeBIGRAPID                           [28] 
+                         0.0            0.032                evaluateGenericInitrav                    [51] 
+                         0.0            0.750                getStartingTree                           [57] 
+                         0.0            0.300                initModel                                 [72] 
+                         0.0            2.148                modOpt                                    [44] 
+                         0.0            44.648               treeOptimizeThorough                      [33] 
+                                                                                                            
+                         0.0            0.180                evaluateChange                            [77] 
+                         0.0            0.010                main                                      [15] 
+                         0.0            0.020                qsmoothLocal <cycle 1>                    [82] 
+                         0.0            0.020                removeNodeRestoreBIG                      [97] 
+                         0.020          0.941                recallBestTree                            [56] 
+                         0.030          0.380                rearrangeBIG.part.1                       [21] 
+                         0.060          1.980                evaluateGenericInitrav                    [51] 
+                         0.330          2.668                modOpt                                    [44] 
+                         0.439          2.688                smooth <cycle 5>                          [41] 
+                         0.560          5.818                evaluateGeneric                           [45] 
+                         0.560          4.136                insertBIG                                 [26] 
+                         11.681         84.289               topLevelMakenewz                          [20] 
+[17]   8.07              13.680         103.130            masterBarrier                               [17] 
+                         0.100          103.030              execFunction                              [4]  
+                                                                                                            
+                         11.006         90.882               newviewIterative                          [6]  
+[18]   7.04              11.006         90.882             makeP                                       [18] 
+                         90.463         0.0                  exp                                       [11] 
+                         0.419          0.0                  [Import thunk exp]                        [55] 
+                                                                                                            
+                         0.0            15.471               insertBIG                                 [26] 
+                         0.0            0.090                qupdate                                   [84] 
+                         0.0            0.690                removeNodeBIG                             [59] 
+                         0.050          82.028               update                                    [27] 
+[19]   6.79              0.050          98.279             makenewzGeneric                             [19] 
+                         1.210          96.650               topLevelMakenewz                          [20] 
+                         0.160          0.259                computeTraversalInfo <cycle 8>            [65] 
+                                                                                                            
+                         1.210          96.650               makenewzGeneric                           [19] 
+[20]   6.76              1.210          96.650             topLevelMakenewz                            [20] 
+                         11.681         84.289               masterBarrier                             [17] 
+                         0.410          0.0                  __ieee754_log_avx                         [31] 
+                         0.260          0.0                  exp                                       [11] 
+                         0.010          0.0                  [Import thunk exp]                        [55] 
+                                                                                                            
+                         0.0            5.426                determineRearrangementSetting             [48] 
+                         0.0            48.049               treeOptimizeRapid                         [30] 
+                         0.0            43.468               treeOptimizeThorough                      [33] 
+[21]   6.7               0.0            96.944             rearrangeBIG.part.1                         [21] 
+                         0.030          0.380                masterBarrier                             [17] 
+                         0.010          95.823               addTraverseBIG <cycle 3>                  [24] 
+                         0.0            0.010                newviewGeneric                            [83] 
+                         0.0            0.690                removeNodeBIG                             [59] 
+                                                                                                            
+                         0.289          96.256               execFunction                              [4]  
+[22]   6.67              0.289          96.256             evaluateIterative                           [22] 
+                         4.506          40.697               evaluateGTRCAT                            [32] 
+                         1.509          7.194                evaluateGTRGAMMA                          [43] 
+                         0.340          39.092               newviewIterative                          [6]  
+                         0.130          2.789                calcDiagptable                            [50] 
+                                                                                                            
+                         0.010          95.823               rearrangeBIG.part.1                       [21] 
+[23]   6.62              0.010          95.823             <cycle 3 as a whole>                        [23] 
+                         0.010          95.823               addTraverseBIG <cycle 3>                  [24] 
+                                                                                                            
+                                                             addTraverseBIG <cycle 3>                  [24] 
+                         0.010          95.823               rearrangeBIG.part.1                       [21] 
+[24]   6.62              0.010          95.823             addTraverseBIG <cycle 3>                    [24] 
+                         0.020          95.803               testInsertBIG                             [25] 
+                                                             addTraverseBIG <cycle 3>                  [24] 
+                                                                                                            
+                         0.020          95.803               addTraverseBIG <cycle 3>                  [24] 
+[25]   6.62              0.020          95.803             testInsertBIG                               [25] 
+                         0.010          6.368                evaluateGeneric                           [45] 
+                         0.010          89.415               insertBIG                                 [26] 
+                                                                                                            
+                         0.0            0.389                testInsertRestoreBIG                      [67] 
+                         0.010          89.415               testInsertBIG                             [25] 
+[26]   6.2               0.010          89.804             insertBIG                                   [26] 
+                         0.560          4.136                masterBarrier                             [17] 
+                         0.020          0.0                  __ieee754_log_avx                         [31] 
+                         0.020          69.547               localSmooth                               [29] 
+                         0.0            15.471               makenewzGeneric                           [19] 
+                         0.0            0.050                newviewGeneric                            [83] 
+                                                                                                            
+                         0.010          12.581               smooth <cycle 5>                          [41] 
+                         0.050          69.497               localSmooth                               [29] 
+[27]   5.67              0.060          82.078             update                                      [27] 
+                         0.050          82.028               makenewzGeneric                           [19] 
+                                                                                                            
+                         0.0            72.631               doInference                               [16] 
+[28]   5.02              0.0            72.631             computeBIGRAPID                             [28] 
+                         0.050          4.436                modOpt                                    [44] 
+                         0.010          0.300                recallBestTree                            [56] 
+                         0.0            5.706                determineRearrangementSetting             [48] 
+                         0.0            14.010               treeEvaluate                              [40] 
+                         0.0            48.119               treeOptimizeRapid                         [30] 
+                                                                                                            
+                         0.020          69.547               insertBIG                                 [26] 
+[29]   4.81              0.020          69.547             localSmooth                                 [29] 
+                         0.050          69.497               update                                    [27] 
+                                                                                                            
+                         0.0            48.119               computeBIGRAPID                           [28] 
+[30]   3.32              0.0            48.119             treeOptimizeRapid                           [30] 
+                         0.0            0.010                [Unknown stack frame(s)]                  [74] 
+                         0.0            48.049               rearrangeBIG.part.1                       [21] 
+                         0.0            0.040                restoreTopologyOnly                       [91] 
+                         0.0            0.020                testInsertRestoreBIG                      [67] 
+                                                                                                            
+                         0.010          0.0                  computeFullTraversalInfo <cycle 4>        [105]
+                         0.020          0.0                  insertBIG                                 [26] 
+                         0.130          0.0                  calcDiagptable                            [50] 
+                         0.150          0.0                  evaluatePartialGeneric                    [35] 
+                         0.279          0.0                  computeTraversalInfo <cycle 8>            [65] 
+                         0.410          0.0                  topLevelMakenewz                          [20] 
+                         6.984          0.0                  evaluateGTRGAMMA                          [43] 
+                         39.267         0.0                  evaluateGTRCAT                            [32] 
+[31]   3.26              47.250         0.0                __ieee754_log_avx                           [31] 
+                                                                                                            
+                         4.506          40.697               evaluateIterative                         [22] 
+[32]   3.12              4.506          40.697             evaluateGTRCAT                              [32] 
+                         39.267         0.0                  __ieee754_log_avx                         [31] 
+                         0.600          0.0                  log                                       [58] 
+                         0.350          0.0                  [Import thunk log]                        [68] 
+                         0.260          0.0                  func@0x5400                               [70] 
+                         0.220          0.0                  FABS                                      [42] 
+                                                                                                            
+                         0.0            44.648               doInference                               [16] 
+[33]   3.08              0.0            44.648             treeOptimizeThorough                        [33] 
+                         0.0            0.110                quickSmoothLocal.constprop.1              [81] 
+                         0.0            43.468               rearrangeBIG.part.1                       [21] 
+                         0.0            0.651                recallBestTree                            [56] 
+                         0.0            0.020                restoreTreeFast                           [98] 
+                         0.0            0.020                saveBestTree                              [87] 
+                         0.0            0.379                testInsertRestoreBIG                      [67] 
+                                                                                                            
+                         38.394         0.0                  makenewzIterative                         [7]  
+[34]   2.65              38.394         0.0                sumGAMMA                                    [34] 
+                                                                                                            
+                         6.500          24.183               optRateCatPthreads                        [36] 
+[35]   2.12              6.500          24.183             evaluatePartialGeneric                      [35] 
+                         23.573         0.0                  exp                                       [11] 
+                         0.210          0.0                  [Import thunk exp]                        [55] 
+                         0.150          0.0                  __ieee754_log_avx                         [31] 
+                         0.020          0.0                  free                                      [69] 
+                         0.020          0.0                  _int_free                                 [53] 
+                         0.0            0.210                rax_malloc                                [46] 
+                                                                                                            
+                         0.0            30.683               execFunction                              [4]  
+[36]   2.12              0.0            30.683             optRateCatPthreads                          [36] 
+                         6.500          24.183               evaluatePartialGeneric                    [35] 
+                                                                                                            
+                         20.182         0.0                  makenewzIterative                         [7]  
+[37]   1.39              20.182         0.0                sumCAT                                      [37] 
+                                                                                                            
+                         0.020          15.758               smoothTree                                [39] 
+[38]   1.09              0.020          15.758             <cycle 5 as a whole>                        [38] 
+                         0.020          15.758               smooth <cycle 5>                          [41] 
+                                                                                                            
+                         0.0            15.778               treeEvaluate                              [40] 
+[39]   1.09              0.0            15.778             smoothTree                                  [39] 
+                         0.020          15.758               smooth <cycle 5>                          [41] 
+                                                                                                            
+                         0.0            14.010               computeBIGRAPID                           [28] 
+                         0.0            0.260                determineRearrangementSetting             [48] 
+                         0.0            0.120                getStartingTree                           [57] 
+                         0.0            1.388                modOpt                                    [44] 
+[40]   1.09              0.0            15.778             treeEvaluate                                [40] 
+                         0.0            15.778               smoothTree                                [39] 
+                                                                                                            
+                                                             smooth <cycle 5>                          [41] 
+                         0.020          15.758               smoothTree                                [39] 
+[41]   1.09              0.020          15.758             smooth <cycle 5>                            [41] 
+                         0.439          2.688                masterBarrier                             [17] 
+                         0.010          12.581               update                                    [27] 
+                         0.0            0.040                newviewGeneric                            [83] 
+                                                             smooth <cycle 5>                          [41] 
+                                                                                                            
+                         0.040          0.0                  evaluateGTRGAMMA                          [43] 
+                         0.220          0.0                  evaluateGTRCAT                            [32] 
+                         5.048          0.0                  coreGTRGAMMA                              [9]  
+                         8.612          0.0                  coreGTRCAT                                [8]  
+[42]   0.96              13.920         0.0                FABS                                        [42] 
+                                                                                                            
+                         1.509          7.194                evaluateIterative                         [22] 
+[43]   0.6               1.509          7.194              evaluateGTRGAMMA                            [43] 
+                         6.984          0.0                  __ieee754_log_avx                         [31] 
+                         0.090          0.0                  log                                       [58] 
+                         0.060          0.0                  func@0x5400                               [70] 
+                         0.040          0.0                  FABS                                      [42] 
+                         0.020          0.0                  [Import thunk log]                        [68] 
+                                                                                                            
+                         0.0            2.148                doInference                               [16] 
+                         0.050          4.436                computeBIGRAPID                           [28] 
+[44]   0.46              0.050          6.584              modOpt                                      [44] 
+                         0.330          2.668                masterBarrier                             [17] 
+                         0.0            1.200                derivativeFunk                            [54] 
+                         0.0            0.199                evaluateGenericInitrav                    [51] 
+                         0.0            0.190                optAlphasGeneric.constprop.13             [75] 
+                         0.0            0.609                targetFunk                                [52] 
+                         0.0            1.388                treeEvaluate                              [40] 
+                                                                                                            
+                         0.0            0.010                testInsertRestoreBIG                      [67] 
+                         0.010          6.368                testInsertBIG                             [25] 
+[45]   0.44              0.010          6.378              evaluateGeneric                             [45] 
+                         0.560          5.818                masterBarrier                             [17] 
+                                                                                                            
+                         0.0            0.210                evaluatePartialGeneric                    [35] 
+                         0.0            0.040                newviewIterative                          [6]  
+                         0.030          5.885                coreGTRCAT                                [8]  
+[46]   0.43              0.030          6.135              rax_malloc                                  [46] 
+                         6.135          0.0                  posix_memalign                            [47] 
+                                                                                                            
+                         6.135          0.0                  rax_malloc                                [46] 
+[47]   0.42              6.135          0.0                posix_memalign                              [47] 
+                                                                                                            
+                         0.0            5.706                computeBIGRAPID                           [28] 
+[48]   0.39              0.0            5.706              determineRearrangementSetting               [48] 
+                         0.0            5.426                rearrangeBIG.part.1                       [21] 
+                         0.0            0.020                recallBestTree                            [56] 
+                         0.0            0.260                treeEvaluate                              [40] 
+                                                                                                            
+                         4.327          0.0                  execFunction                              [4]  
+[49]   0.3               4.327          0.0                __memcpy_ssse3_back                         [49] 
+                                                                                                            
+                         0.130          2.789                evaluateIterative                         [22] 
+[50]   0.2               0.130          2.789              calcDiagptable                              [50] 
+                         2.629          0.0                  exp                                       [11] 
+                         0.130          0.0                  __ieee754_log_avx                         [31] 
+                         0.020          0.0                  [Import thunk exp]                        [55] 
+                         0.010          0.0                  log                                       [58] 
+                                                                                                            
+                         0.0            0.032                doInference                               [16] 
+                         0.0            0.010                getStartingTree                           [57] 
+                         0.0            0.199                modOpt                                    [44] 
+                         0.0            0.010                optParamGeneric.constprop.21              [76] 
+                         0.0            1.799                targetFunk                                [52] 
+[51]   0.14              0.0            2.050              evaluateGenericInitrav                      [51] 
+                         0.060          1.980                masterBarrier                             [17] 
+                         0.0            0.010                determineFullTraversal                    [106]
+                                                                                                            
+                         0.0            1.200                derivativeFunk                            [54] 
+                         0.0            0.609                modOpt                                    [44] 
+[52]   0.12              0.0            1.809              targetFunk                                  [52] 
+                         0.0            1.799                evaluateGenericInitrav                    [51] 
+                         0.0            0.010                initReversibleGTR                         [119]
+                                                                                                            
+                         0.010          0.0                  initGeneric                               [118]
+                         0.010          0.0                  newviewIterative                          [6]  
+                         0.020          0.0                  evaluatePartialGeneric                    [35] 
+                         1.507          0.0                  execCore                                  [5]  
+[53]   0.11              1.547          0.0                _int_free                                   [53] 
+                                                                                                            
+                         0.0            1.200                modOpt                                    [44] 
+[54]   0.08              0.0            1.200              derivativeFunk                              [54] 
+                         0.0            1.200                targetFunk                                [52] 
+                                                                                                            
+                         0.010          0.0                  topLevelMakenewz                          [20] 
+                         0.020          0.0                  calcDiagptable                            [50] 
+                         0.090          0.0                  coreGTRGAMMA                              [9]  
+                         0.210          0.0                  evaluatePartialGeneric                    [35] 
+                         0.390          0.0                  coreGTRCAT                                [8]  
+                         0.419          0.0                  makeP                                     [18] 
+[55]   0.08              1.139          0.0                [Import thunk exp]                          [55] 
+                                                                                                            
+                         0.0            0.020                determineRearrangementSetting             [48] 
+                         0.0            0.651                treeOptimizeThorough                      [33] 
+                         0.010          0.300                computeBIGRAPID                           [28] 
+[56]   0.07              0.010          0.971              recallBestTree                              [56] 
+                         0.020          0.941                masterBarrier                             [17] 
+                         0.0            0.010                onlyInitrav                               [112]
+                                                                                                            
+                         0.0            0.750                doInference                               [16] 
+[57]   0.05              0.0            0.750              getStartingTree                             [57] 
+                         0.0            0.010                evaluateGenericInitrav                    [51] 
+                         0.0            0.620                makeParsimonyTreeFast                     [60] 
+                         0.0            0.120                treeEvaluate                              [40] 
+                                                                                                            
+                         0.010          0.0                  computeTraversalInfo <cycle 8>            [65] 
+                         0.010          0.0                  calcDiagptable                            [50] 
+                         0.090          0.0                  evaluateGTRGAMMA                          [43] 
+                         0.600          0.0                  evaluateGTRCAT                            [32] 
+[58]   0.05              0.710          0.0                log                                         [58] 
+                                                                                                            
+                         0.0            0.690                rearrangeBIG.part.1                       [21] 
+[59]   0.05              0.0            0.690              removeNodeBIG                               [59] 
+                         0.0            0.690                makenewzGeneric                           [19] 
+                                                                                                            
+                         0.0            0.620                getStartingTree                           [57] 
+[60]   0.04              0.0            0.620              makeParsimonyTreeFast                       [60] 
+                         0.020          0.0                  compressDNA                               [110]
+                         0.0            0.580                addTraverseParsimony <cycle 9>            [61] 
+                         0.0            0.020                stepwiseAddition <cycle 11>               [103]
+                                                                                                            
+                                                             addTraverseParsimony <cycle 9>            [61] 
+                         0.0            0.580                makeParsimonyTreeFast                     [60] 
+[61]   0.04              0.0            0.580              addTraverseParsimony <cycle 9>              [61] 
+                         0.010          0.160                evaluateParsimony                         [78] 
+                                                             addTraverseParsimony <cycle 9>            [61] 
+                         0.0            0.010                insertParsimony                           [115]
+                         0.0            0.400                newviewParsimony                          [66] 
+                                                                                                            
+                         0.0            0.580                makeParsimonyTreeFast                     [60] 
+[62]   0.04              0.0            0.580              <cycle 9 as a whole>                        [62] 
+                         0.0            0.580                addTraverseParsimony <cycle 9>            [61] 
+                                                                                                            
+                         0.110          0.030                evaluateParsimonyIterativeFast            [79] 
+                         0.200          0.180                newviewParsimony                          [66] 
+[63]   0.04              0.310          0.210              newviewParsimonyIterativeFast               [63] 
+                         0.210          0.0                  precomputed16_bitcount                    [73] 
+                                                                                                            
+                         0.040          0.060                newviewGeneric                            [83] 
+                         0.160          0.259                makenewzGeneric                           [19] 
+[64]   0.04              0.200          0.319              <cycle 8 as a whole>                        [64] 
+                         0.200          0.319                computeTraversalInfo <cycle 8>            [65] 
+                                                                                                            
+                                                             computeTraversalInfo <cycle 8>            [65] 
+                         0.040          0.060                newviewGeneric                            [83] 
+                         0.160          0.259                makenewzGeneric                           [19] 
+[65]   0.04              0.200          0.319              computeTraversalInfo <cycle 8>              [65] 
+                         0.279          0.0                  __ieee754_log_avx                         [31] 
+                         0.020          0.0                  isTip                                     [85] 
+                         0.010          0.0                  getxnode                                  [111]
+                         0.010          0.0                  log                                       [58] 
+                                                             computeTraversalInfo <cycle 8>            [65] 
+                                                                                                            
+                         0.0            0.400                addTraverseParsimony <cycle 9>            [61] 
+[66]   0.03              0.0            0.400              newviewParsimony                            [66] 
+                         0.200          0.180                newviewParsimonyIterativeFast             [63] 
+                         0.020          0.0                  computeTraversalInfoParsimony <cycle 10>  [93] 
+                                                                                                            
+                         0.0            0.020                treeOptimizeRapid                         [30] 
+                         0.0            0.379                treeOptimizeThorough                      [33] 
+[67]   0.03              0.0            0.399              testInsertRestoreBIG                        [67] 
+                         0.0            0.010                evaluateGeneric                           [45] 
+                         0.0            0.389                insertBIG                                 [26] 
+                                                                                                            
+                         0.020          0.0                  evaluateGTRGAMMA                          [43] 
+                         0.350          0.0                  evaluateGTRCAT                            [32] 
+[68]   0.03              0.370          0.0                [Import thunk log]                          [68] 
+                                                                                                            
+                         0.020          0.0                  evaluatePartialGeneric                    [35] 
+                         0.349          0.0                  execCore                                  [5]  
+[69]   0.03              0.369          0.0                free                                        [69] 
+                                                                                                            
+                         0.060          0.0                  evaluateGTRGAMMA                          [43] 
+                         0.260          0.0                  evaluateGTRCAT                            [32] 
+[70]   0.02              0.320          0.0                func@0x5400                                 [70] 
+                                                                                                            
+                         0.290          0.010                initModel                                 [72] 
+[71]   0.02              0.290          0.010              genericBaseFrequencies.isra.2               [71] 
+                         0.010          0.0                  precomputed16_bitcount                    [73] 
+                                                                                                            
+                         0.0            0.300                doInference                               [16] 
+[72]   0.02              0.0            0.300              initModel                                   [72] 
+                         0.290          0.010                genericBaseFrequencies.isra.2             [71] 
+                                                                                                            
+                         0.010          0.0                  evaluateParsimonyIterativeFast            [79] 
+                         0.010          0.0                  genericBaseFrequencies.isra.2             [71] 
+                         0.210          0.0                  newviewParsimonyIterativeFast             [63] 
+[73]   0.02              0.230          0.0                precomputed16_bitcount                      [73] 
+                                                                                                            
+                         0.0            0.220                start_thread                              [2]  
+                         0.0            0.010                treeOptimizeRapid                         [30] 
+[74]   0.02              0.0            0.230              [Unknown stack frame(s)]                    [74] 
+                         0.230          0.0                  execFunction                              [4]  
+                                                                                                            
+                         0.0            0.190                modOpt                                    [44] 
+[75]   0.01              0.0            0.190              optAlphasGeneric.constprop.13               [75] 
+                         0.0            0.190                optParamGeneric.constprop.21              [76] 
+                                                                                                            
+                         0.0            0.190                optAlphasGeneric.constprop.13             [75] 
+[76]   0.01              0.0            0.190              optParamGeneric.constprop.21                [76] 
+                         0.0            0.180                evaluateChange                            [77] 
+                         0.0            0.010                evaluateGenericInitrav                    [51] 
+                                                                                                            
+                         0.0            0.180                optParamGeneric.constprop.21              [76] 
+[77]   0.01              0.0            0.180              evaluateChange                              [77] 
+                         0.0            0.180                masterBarrier                             [17] 
+                                                                                                            
+                         0.010          0.160                addTraverseParsimony <cycle 9>            [61] 
+[78]   0.01              0.010          0.160              evaluateParsimony                           [78] 
+                         0.020          0.0                  computeTraversalInfoParsimony <cycle 10>  [93] 
+                         0.010          0.130                evaluateParsimonyIterativeFast            [79] 
+                                                                                                            
+                         0.0            0.020                stepwiseAddition <cycle 11>               [103]
+                         0.010          0.130                evaluateParsimony                         [78] 
+[79]   0.01              0.010          0.150              evaluateParsimonyIterativeFast              [79] 
+                         0.110          0.030                newviewParsimonyIterativeFast             [63] 
+                         0.010          0.0                  precomputed16_bitcount                    [73] 
+                                                                                                            
+                         0.0            0.110                quickSmoothLocal.constprop.1              [81] 
+[80]   0.01              0.0            0.110              <cycle 1 as a whole>                        [80] 
+                         0.0            0.110                qsmoothLocal <cycle 1>                    [82] 
+                                                                                                            
+                         0.0            0.110                treeOptimizeThorough                      [33] 
+[81]   0.01              0.0            0.110              quickSmoothLocal.constprop.1                [81] 
+                         0.0            0.110                qsmoothLocal <cycle 1>                    [82] 
+                                                                                                            
+                                                             qsmoothLocal <cycle 1>                    [82] 
+                         0.0            0.110                quickSmoothLocal.constprop.1              [81] 
+[82]   0.01              0.0            0.110              qsmoothLocal <cycle 1>                      [82] 
+                         0.0            0.020                masterBarrier                             [17] 
+                                                             qsmoothLocal <cycle 1>                    [82] 
+                         0.0            0.090                qupdate                                   [84] 
+                                                                                                            
+                         0.0            0.050                insertBIG                                 [26] 
+                         0.0            0.010                rearrangeBIG.part.1                       [21] 
+                         0.0            0.040                smooth <cycle 5>                          [41] 
+[83]   0.01              0.0            0.100              newviewGeneric                              [83] 
+                         0.040          0.060                computeTraversalInfo <cycle 8>            [65] 
+                                                                                                            
+                         0.0            0.090                qsmoothLocal <cycle 1>                    [82] 
+[84]   0.01              0.0            0.090              qupdate                                     [84] 
+                         0.0            0.090                makenewzGeneric                           [19] 
+                                                                                                            
+                         0.020          0.0                  computeTraversalInfo <cycle 8>            [65] 
+                         0.070          0.0                  makenewzIterative                         [7]  
+[85]   0.01              0.090          0.0                isTip                                       [85] 
+                                                                                                            
+                         0.070          0.0                  execFunction                              [4]  
+[86]   0.0               0.070          0.0                [Import thunk memcpy]                       [86] 
+                                                                                                            
+                         0.0            0.040                restoreTopologyOnly                       [91] 
+                         0.0            0.020                treeOptimizeThorough                      [33] 
+[87]   0.0               0.0            0.060              saveBestTree                                [87] 
+                         0.030          0.0                  minSubtreeTip <cycle 2>                   [95] 
+                         0.010          0.0                  saveSubtree <cycle 6>                     [117]
+                         0.0            0.020                findInList                                [101]
+                                                                                                            
+                         0.010          0.050                main                                      [15] 
+[88]   0.0               0.010          0.050              getinput                                    [88] 
+                         0.010          0.020                parseFasta.isra.36                        [96] 
+                         0.0            0.020                rax_getline                               [90] 
+                                                                                                            
+                         0.040          0.0                  rax_getline                               [90] 
+[89]   0.0               0.040          0.0                fgetc                                       [89] 
+                                                                                                            
+                         0.0            0.020                getinput                                  [88] 
+                         0.0            0.020                parseFasta.isra.36                        [96] 
+[90]   0.0               0.0            0.040              rax_getline                                 [90] 
+                         0.040          0.0                  fgetc                                     [89] 
+                                                                                                            
+                         0.0            0.040                treeOptimizeRapid                         [30] 
+[91]   0.0               0.0            0.040              restoreTopologyOnly                         [91] 
+                         0.0            0.040                saveBestTree                              [87] 
+                                                                                                            
+                         0.020          0.0                  newviewParsimony                          [66] 
+                         0.020          0.0                  evaluateParsimony                         [78] 
+[92]   0.0               0.040          0.0                <cycle 10 as a whole>                       [92] 
+                         0.040          0.0                  computeTraversalInfoParsimony <cycle 10>  [93] 
+                                                                                                            
+                                                             computeTraversalInfoParsimony <cycle 10>  [93] 
+                         0.020          0.0                  newviewParsimony                          [66] 
+                         0.020          0.0                  evaluateParsimony                         [78] 
+[93]   0.0               0.040          0.0                computeTraversalInfoParsimony <cycle 10>    [93] 
+                                                             computeTraversalInfoParsimony <cycle 10>  [93] 
+                                                                                                            
+                         0.030          0.0                  saveBestTree                              [87] 
+[94]   0.0               0.030          0.0                <cycle 2 as a whole>                        [94] 
+                         0.030          0.0                  minSubtreeTip <cycle 2>                   [95] 
+                                                                                                            
+                                                             minSubtreeTip <cycle 2>                   [95] 
+                         0.030          0.0                  saveBestTree                              [87] 
+[95]   0.0               0.030          0.0                minSubtreeTip <cycle 2>                     [95] 
+                                                             minSubtreeTip <cycle 2>                   [95] 
+                                                                                                            
+                         0.010          0.020                getinput                                  [88] 
+[96]   0.0               0.010          0.020              parseFasta.isra.36                          [96] 
+                         0.0            0.020                rax_getline                               [90] 
+                                                                                                            
+                         0.0            0.020                restoreTreeFast                           [98] 
+[97]   0.0               0.0            0.020              removeNodeRestoreBIG                        [97] 
+                         0.0            0.020                masterBarrier                             [17] 
+                                                                                                            
+                         0.0            0.020                treeOptimizeThorough                      [33] 
+[98]   0.0               0.0            0.020              restoreTreeFast                             [98] 
+                         0.0            0.020                removeNodeRestoreBIG                      [97] 
+                                                                                                            
+                         0.020          0.0                  findInList                                [101]
+[99]   0.0               0.020          0.0                <cycle 7 as a whole>                        [99] 
+                         0.020          0.0                  cmpSubtopol.isra.0 <cycle 7>              [100]
+                                                                                                            
+                                                             cmpSubtopol.isra.0 <cycle 7>              [100]
+                         0.020          0.0                  findInList                                [101]
+[100]  0.0               0.020          0.0                cmpSubtopol.isra.0 <cycle 7>                [100]
+                                                             cmpSubtopol.isra.0 <cycle 7>              [100]
+                                                                                                            
+                         0.0            0.020                saveBestTree                              [87] 
+[101]  0.0               0.0            0.020              findInList                                  [101]
+                         0.020          0.0                  cmpSubtopol.isra.0 <cycle 7>              [100]
+                                                                                                            
+                         0.0            0.020                makeParsimonyTreeFast                     [60] 
+[102]  0.0               0.0            0.020              <cycle 11 as a whole>                       [102]
+                         0.0            0.020                stepwiseAddition <cycle 11>               [103]
+                                                                                                            
+                         0.0            0.020                makeParsimonyTreeFast                     [60] 
+                                                             stepwiseAddition <cycle 11>               [103]
+[103]  0.0               0.0            0.020              stepwiseAddition <cycle 11>                 [103]
+                         0.0            0.020                evaluateParsimonyIterativeFast            [79] 
+                                                             stepwiseAddition <cycle 11>               [103]
+                                                                                                            
+                         0.010          0.010                determineFullTraversal                    [106]
+[104]  0.0               0.010          0.010              <cycle 4 as a whole>                        [104]
+                         0.010          0.010                computeFullTraversalInfo <cycle 4>        [105]
+                                                                                                            
+                                                             computeFullTraversalInfo <cycle 4>        [105]
+                         0.010          0.010                determineFullTraversal                    [106]
+[105]  0.0               0.010          0.010              computeFullTraversalInfo <cycle 4>          [105]
+                         0.010          0.0                  __ieee754_log_avx                         [31] 
+                                                             computeFullTraversalInfo <cycle 4>        [105]
+                                                                                                            
+                         0.0            0.010                evaluateGenericInitrav                    [51] 
+                         0.0            0.010                onlyInitrav                               [112]
+[106]  0.0               0.0            0.020              determineFullTraversal                      [106]
+                         0.010          0.010                computeFullTraversalInfo <cycle 4>        [105]
+                                                                                                            
+                         0.020          0.0                  execCore                                  [5]  
+[107]  0.0               0.020          0.0                [Import thunk free]                         [107]
+                                                                                                            
+                         0.0            0.020                main                                      [15] 
+[108]  0.0               0.0            0.020              checkSequences.isra.38                      [108]
+                         0.020          0.0                  fputc                                     [109]
+                                                                                                            
+                         0.020          0.0                  checkSequences.isra.38                    [108]
+[109]  0.0               0.020          0.0                fputc                                       [109]
+                                                                                                            
+                         0.020          0.0                  makeParsimonyTreeFast                     [60] 
+[110]  0.0               0.020          0.0                compressDNA                                 [110]
+                                                                                                            
+                         0.010          0.0                  computeTraversalInfo <cycle 8>            [65] 
+[111]  0.0               0.010          0.0                getxnode                                    [111]
+                                                                                                            
+                         0.0            0.010                recallBestTree                            [56] 
+[112]  0.0               0.0            0.010              onlyInitrav                                 [112]
+                         0.0            0.010                determineFullTraversal                    [106]
+                                                                                                            
+                         0.010          0.0                  execFunction                              [4]  
+[113]  0.0               0.010          0.0                threadFixModelIndices                       [113]
+                                                                                                            
+                         0.010          0.0                  insertParsimony                           [115]
+[114]  0.0               0.010          0.0                hookupDefault                               [114]
+                                                                                                            
+                         0.0            0.010                addTraverseParsimony <cycle 9>            [61] 
+[115]  0.0               0.0            0.010              insertParsimony                             [115]
+                         0.010          0.0                  hookupDefault                             [114]
+                                                                                                            
+                         0.010          0.0                  saveBestTree                              [87] 
+[116]  0.0               0.010          0.0                <cycle 6 as a whole>                        [116]
+                         0.010          0.0                  saveSubtree <cycle 6>                     [117]
+                                                                                                            
+                                                             saveSubtree <cycle 6>                     [117]
+                         0.010          0.0                  saveBestTree                              [87] 
+[117]  0.0               0.010          0.0                saveSubtree <cycle 6>                       [117]
+                                                             saveSubtree <cycle 6>                     [117]
+                                                                                                            
+                         0.0            0.010                initReversibleGTR                         [119]
+[118]  0.0               0.0            0.010              initGeneric                                 [118]
+                         0.010          0.0                  _int_free                                 [53] 
+                                                                                                            
+                         0.0            0.010                targetFunk                                [52] 
+[119]  0.0               0.0            0.010              initReversibleGTR                           [119]
+                         0.0            0.010                initGeneric                               [118]
+                                                                                                            
+
+
+Index by function name
+
+Index  Function                      
+-----  ------------------------------
+[42]   FABS                          
+[55]   [Import thunk exp]            
+[107]  [Import thunk free]           
+[68]   [Import thunk log]            
+[86]   [Import thunk memcpy]         
+[74]   [Unknown stack frame(s)]      
+[1]    __clone                       
+[31]   __ieee754_log_avx             
+[13]   __libc_start_main             
+[49]   __memcpy_ssse3_back           
+[53]   _int_free                     
+[14]   _start                        
+[24]   addTraverseBIG                
+[61]   addTraverseParsimony          
+[50]   calcDiagptable                
+[108]  checkSequences.isra.38        
+[100]  cmpSubtopol.isra.0            
+[110]  compressDNA                   
+[28]   computeBIGRAPID               
+[105]  computeFullTraversalInfo      
+[65]   computeTraversalInfo          
+[93]   computeTraversalInfoParsimony 
+[8]    coreGTRCAT                    
+[9]    coreGTRGAMMA                  
+[54]   derivativeFunk                
+[106]  determineFullTraversal        
+[48]   determineRearrangementSetting 
+[16]   doInference                   
+[77]   evaluateChange                
+[32]   evaluateGTRCAT                
+[43]   evaluateGTRGAMMA              
+[45]   evaluateGeneric               
+[51]   evaluateGenericInitrav        
+[22]   evaluateIterative             
+[78]   evaluateParsimony             
+[79]   evaluateParsimonyIterativeFast
+[35]   evaluatePartialGeneric        
+[5]    execCore                      
+[4]    execFunction                  
+[11]   exp                           
+[89]   fgetc                         
+[101]  findInList                    
+[109]  fputc                         
+[69]   free                          
+[70]   func@0x5400                   
+[71]   genericBaseFrequencies.isra.2 
+[57]   getStartingTree               
+[88]   getinput                      
+[111]  getxnode                      
+[114]  hookupDefault                 
+[118]  initGeneric                   
+[72]   initModel                     
+[119]  initReversibleGTR             
+[26]   insertBIG                     
+[115]  insertParsimony               
+[85]   isTip                         
+[3]    likelihoodThread              
+[29]   localSmooth                   
+[58]   log                           
+[15]   main                          
+[18]   makeP                         
+[60]   makeParsimonyTreeFast         
+[19]   makenewzGeneric               
+[7]    makenewzIterative             
+[17]   masterBarrier                 
+[95]   minSubtreeTip                 
+[44]   modOpt                        
+[10]   newviewGTRCAT_AVX             
+[12]   newviewGTRGAMMA_AVX           
+[83]   newviewGeneric                
+[6]    newviewIterative              
+[66]   newviewParsimony              
+[63]   newviewParsimonyIterativeFast 
+[112]  onlyInitrav                   
+[75]   optAlphasGeneric.constprop.13 
+[76]   optParamGeneric.constprop.21  
+[36]   optRateCatPthreads            
+[96]   parseFasta.isra.36            
+[47]   posix_memalign                
+[73]   precomputed16_bitcount        
+[82]   qsmoothLocal                  
+[81]   quickSmoothLocal.constprop.1  
+[84]   qupdate                       
+[90]   rax_getline                   
+[46]   rax_malloc                    
+[21]   rearrangeBIG.part.1           
+[56]   recallBestTree                
+[59]   removeNodeBIG                 
+[97]   removeNodeRestoreBIG          
+[91]   restoreTopologyOnly           
+[98]   restoreTreeFast               
+[87]   saveBestTree                  
+[117]  saveSubtree                   
+[41]   smooth                        
+[39]   smoothTree                    
+[2]    start_thread                  
+[103]  stepwiseAddition              
+[37]   sumCAT                        
+[34]   sumGAMMA                      
+[52]   targetFunk                    
+[25]   testInsertBIG                 
+[67]   testInsertRestoreBIG          
+[113]  threadFixModelIndices         
+[20]   topLevelMakenewz              
+[40]   treeEvaluate                  
+[30]   treeOptimizeRapid             
+[33]   treeOptimizeThorough          
+[27]   update                        
+[80]   <cycle 1>                     
+[94]   <cycle 2>                     
+[23]   <cycle 3>                     
+[104]  <cycle 4>                     
+[38]   <cycle 5>                     
+[116]  <cycle 6>                     
+[99]   <cycle 7>                     
+[64]   <cycle 8>                     
+[62]   <cycle 9>                     
+[92]   <cycle 10>                    
+[102]  <cycle 11>                    

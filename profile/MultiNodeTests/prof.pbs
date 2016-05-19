@@ -1,0 +1,13 @@
+
+# 		INITIAL SET UP
+#PBS -V
+#PBS -N CompGenProfile
+
+
+#		RESOURCES
+#PBS -l walltime=99:00:00
+#PBS -l nodes=1:ppn=12
+
+cd /home/rrthakk2/shared/standard-RAxML
+
+amplxe-cl -collect hotspots -result-dir /home/rrthakk2/shared/profile ./raxmlHPC-PTHREADS-AVX -m GTRCAT -n 16S.B.ALL -s 16S.B.ALL/R0/cleaned.alignment.fasta -j -T 16 -p 6154307

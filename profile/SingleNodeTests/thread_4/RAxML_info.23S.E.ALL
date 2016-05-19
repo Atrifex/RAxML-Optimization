@@ -1,0 +1,96 @@
+IMPORTANT WARNING: Alignment column 4522 contains only undetermined values which will be treated as missing data
+
+
+IMPORTANT WARNING: Sequences AAAAAAAAAM and AAAAAAAABU are exactly identical
+
+
+IMPORTANT WARNING: Sequences AAAAAAAAAW and AAAAAAAACP are exactly identical
+
+IMPORTANT WARNING
+Found 2 sequences that are exactly identical to other sequences in the alignment.
+Normally they should be excluded from the analysis.
+
+
+IMPORTANT WARNING
+Found 1 column that contains only undetermined values which will be treated as missing data.
+Normally these columns should be excluded from the analysis.
+
+Just in case you might need it, an alignment file with 
+sequence duplicates and undetermined columns removed is printed to file 23S.E/R0/cleaned.alignment.fasta.reduced
+
+
+Using BFGS method to optimize GTR rate parameters, to disable this specify "--no-bfgs" 
+
+
+Alignment has 1 completely undetermined sites that will be automatically removed from the input data
+
+
+
+This is RAxML version 8.2.8 released by Alexandros Stamatakis on March 23 2016.
+
+With greatly appreciated code contributions by:
+Andre Aberer      (HITS)
+Simon Berger      (HITS)
+Alexey Kozlov     (HITS)
+Kassian Kobert    (HITS)
+David Dao         (KIT and HITS)
+Sarah Lutteropp   (KIT and HITS)
+Nick Pattengale   (Sandia)
+Wayne Pfeiffer    (SDSC)
+Akifumi S. Tanabe (NRIFS)
+Charlie Taylor    (UF)
+
+
+Alignment has 6492 distinct alignment patterns
+
+Proportion of gaps and completely undetermined characters in this alignment: 59.72%
+
+RAxML rapid hill-climbing mode
+
+Using 1 distinct models/data partitions with joint branch length optimization
+
+
+Executing 1 inferences on the original alignment using 1 distinct randomized MP trees
+
+All free model parameters will be estimated by RAxML
+ML estimate of 25 per site rate categories
+
+Likelihood of final tree will be evaluated and optimized under GAMMA
+
+GAMMA Model parameters will be estimated up to an accuracy of 0.1000000000 Log Likelihood units
+
+Partition: 0
+Alignment Patterns: 6492
+Name: No Name Provided
+DataType: DNA
+Substitution Matrix: GTR
+
+
+
+
+RAxML was called as follows:
+
+./raxmlHPC-PTHREADS-AVX -m GTRCAT -n 23S.E.ALL -s 23S.E/R0/cleaned.alignment.fasta -j -T 4 -p 6154307 
+
+
+Partition: 0 with name: No Name Provided
+Base frequencies: 0.246 0.230 0.292 0.232 
+
+Inference[0]: Time 155.022204 CAT-based likelihood -180984.756926, best rearrangement setting 10
+alpha[0]: 1.000000 rates[0] ac ag at cg ct gt: 0.833472 1.807074 1.238637 1.250125 3.370009 1.000000 
+
+
+Conducting final model optimizations on all 1 trees under GAMMA-based models ....
+
+Inference[0] final GAMMA-based Likelihood: -190757.011354 tree written to file /mnt/lustre/ISL/rrthakk2/profile/SingleNodeTests/thread_4/RAxML_result.23S.E.ALL
+
+
+Starting final GAMMA-based thorough Optimization on tree 0 likelihood -190757.011354 .... 
+
+Final GAMMA-based Score of best tree -190754.889125
+
+Program execution info written to /mnt/lustre/ISL/rrthakk2/profile/SingleNodeTests/thread_4/RAxML_info.23S.E.ALL
+Best-scoring ML tree written to: /mnt/lustre/ISL/rrthakk2/profile/SingleNodeTests/thread_4/RAxML_bestTree.23S.E.ALL
+
+Overall execution time: 273.383982 secs or 0.075940 hours or 0.003164 days
+
