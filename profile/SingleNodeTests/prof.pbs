@@ -8,10 +8,9 @@
 #PBS -l walltime=99:00:00
 #PBS -l nodes=1:ppn=1
 
-cd /home/rrthakk2/lustre/profile/SingleNodeTests/thread_1/
+cd /home/rrthakk2/lustre/RAxML-Optimization/profile/SingleNodeTests/thread_1/
 
-amplxe-cl -collect hotspots -data-limit=0 ./raxmlHPC-PTHREADS-AVX -m GTRCAT -n 23S.E.ALL -s 23S.E/R0/cleaned.alignment.fasta -j -T 1 -p 6154307
+amplxe-cl -collect hotspots -data-limit=0 enable-call-counts=true ./raxmlHPC-PTHREADS-AVX -m GTRCAT -n 23S.E.ALL -s 23S.E/R0/cleaned.alignment.fasta -j -T 1 -p 6154307
 amplxe-cl -report gprof-cc -r r000hs > report.txt
-
 
 #amplxe-cl -collect hotspots -data-limit=0 -result-dir ./results ./raxmlHPC-AVX -m GTRCAT -n 16S.B.ALL -s 16S.B.ALL/R0/cleaned.alignment.fasta -j -T 1 -p 6154307
