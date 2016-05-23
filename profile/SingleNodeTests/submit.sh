@@ -6,6 +6,7 @@
 # Author: Rishi Thakkar
 #
 
+sleep 2
 qsub thread_1/prof.pbs
 if [ $? -eq 1 ]
 then 
@@ -13,6 +14,7 @@ then
 	exit
 fi
 
+sleep 2
 qsub thread_1_AVX/prof.pbs
 if [ $? -eq 1 ]
 then 
@@ -25,6 +27,7 @@ while [ $threadCount -le 6 ]
 do
        	temp=`expr $threadCount \* 2`
 
+	sleep 2
        	qsub thread_$temp/prof.pbs
 	if [ $? -eq 1 ]
 	then 
@@ -34,3 +37,4 @@ do
 
        	threadCount=`expr $threadCount + 1`
 done
+
