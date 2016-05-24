@@ -6,35 +6,17 @@
 # Author: Rishi Thakkar
 #
 
-sleep 2
-qsub thread_1/prof.pbs
-if [ $? -eq 1 ]
-then 
-	echo "There was a problem with the job submission. Please check your script before trying again."
-	exit
-fi
-
-sleep 2
-qsub thread_1_AVX/prof.pbs
-if [ $? -eq 1 ]
-then 
-	echo "There was a problem with the job submission. Please check your script before trying again."
-	exit
-fi
-
-threadCount=1
-while [ $threadCount -le 6 ]
+count=1
+while [ $count -le 32 ]
 do
-       	temp=`expr $threadCount \* 2`
 
 	sleep 2
-       	qsub thread_$temp/prof.pbs
+       	qsub thread_1_$count/prof.pbs
 	if [ $? -eq 1 ]
 	then 
 		echo "There was a problem with the job submission. Please check your script before trying again."
 		exit
 	fi
 
-       	threadCount=`expr $threadCount + 1`
+	count=`expr $count + 1`
 done
-

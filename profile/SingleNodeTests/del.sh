@@ -1,5 +1,12 @@
+#!/bin/bash
 
-
+#
+# This script is to be used coupled with the setup.sh script. 
+# Its main purpose is to delete all 8 submited jobs.
+# Once the setup and modifications are done correctly, you can execute this script to start the profiling
+# 
+# Author: Rishi Thakkar
+#
 
 echo -e "Enter starting ID: \c"
 read startID

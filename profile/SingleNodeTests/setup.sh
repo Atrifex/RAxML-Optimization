@@ -24,7 +24,7 @@ dataset=/home/rrthakk2/lustre/RAxML-Optimization/profile/dataSets
 echo -e "\033[0;31m-------------------------------------------------------------------------------------------------------"
 echo -e "\033[1;31mThis script will delete all thread_* files and directories.\033[0m"
 echo -e "\033[0;31m-------------------------------------------------------------------------------------------------------\033[0m"
-echo -e "Please enter y/Y if you want to continue or enter n/N to exit: \c"
+echo -e "Please enter y/Y if you want to continue, enter n/N to exit, or enter c/C to clean: \c"
 while true
 do
 	read char
@@ -39,7 +39,7 @@ do
 		rm -rf thread_*
 		exit
 	fi
-	echo -e "Please enter a valid input. y/Y if you want to continue or n/N if you want to exit: \c"
+	echo -e "Please enter a valid input. y/Y if you want to continue or n/N if you want to exit. c/C if you want to clean: \c"
 done
 
 rm -rf thread_*
