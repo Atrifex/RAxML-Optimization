@@ -1,0 +1,21 @@
+
+# 		INITIAL SET UP
+#PBS -V
+#PBS -N thread_1_1
+
+
+#		RESOURCES
+#PBS -l walltime=99:00:00
+#PBS -l nodes=nano4:ppn=1
+
+cd /home/rrthakk2/lustre/RAxML-Optimization/profile/SingleThreadTests/thread_1_1/
+
+
+amplxe-cl -collect advanced-hotspots -knob collection-detail=stack-and-callcount -data-limit=0 ./raxmlHPC -m GTRCAT -n 23S.E.ALL -s 23S.E/R0/cleaned.alignment.fasta -j -p 6154307
+rm RAxML_*
+
+#rm RAxML_*		# This was used when we did call-count collection and hotspot collection seperately
+
+#amplxe-cl -report gprof-cc -r r000hs > report.txt
+
+#amplxe-cl -collect hotspots -data-limit=0 enable-call-counts=true ./raxmlHPC-PTHREADS-AVX -m GTRCAT -n 23S.E.ALL -s 23S.E/R0/cleaned.alignment.fasta -j -T 1 -p 6154307
