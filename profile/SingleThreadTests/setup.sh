@@ -14,6 +14,9 @@
 #	- might want to use the commented out seperate directories for results
 # 
 # Author: Rishi Thakkar
+# Version: 1
+# Date: 5/19/2016
+#
 
 # sets up folder structure for two unique cases
 
